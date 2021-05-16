@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>com.craigslist.daemon.plist</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StartInterval</key>
+    <integer>14400</integer> <!-- every 6 hours -->
+
+    <key>WorkingDirectory</key>
+    <string>/Users/parth/active_projects/craigslist-scrape</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/parth/.virtualenvs/craigslist-scrape-2SgaIR0x/bin/python</string>
+      <string>craigslist_scrape.py</string>
+    </array>
+
+  </dict>
+</plist>
